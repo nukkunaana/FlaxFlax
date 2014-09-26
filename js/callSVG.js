@@ -58,7 +58,11 @@ $(document).ready(function(){
 
 	setTimeout(function(){
 		$(window).trigger('resize');
-	}, 1800);
+	}, 500);
 		
-		
+	$('.collapse').on('shown.bs.collapse hidden.bs.collapse', function(e) { 
+		setTimeout(function(){
+			$(window).trigger("resize")
+		}, 1)
+	});	
 });
