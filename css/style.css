@@ -1,0 +1,756 @@
+/*изменение пути к папке*/
+@font-face {
+	font-family: "Flaticon";
+	src: url("../fonts/flaticon.eot");
+	src: url("../fonts/flaticon.eot#iefix") format("embedded-opentype"),
+	url("../fonts/flaticon.woff") format("woff"),
+	url("../fonts/flaticon.ttf") format("truetype"),
+	url("../fonts/flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+body{
+	overflow-x: hidden;
+}
+.wrapper {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300; /*light*/
+}
+
+.container {
+	width: 71.1%; 
+	margin: 0 auto;
+	padding: 0;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+	color: #d4a964;
+	font-weight: 300;
+	font-size: 40px;
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+
+/*=======================================================
+ШАПКА==================================================*/
+
+.navbar {
+	border-radius: 0;
+	border-bottom: 1px solid #e3e3e3;
+	padding-top: 26px;
+	padding-bottom: 5px;
+	border-color: #fff;
+	border-bottom: 1px solid #e3e3e3;
+	position: relative;
+	z-index: 3;
+	margin-bottom: 65px;
+	font-size: 100%;
+	background-color: #fff;
+}
+
+.navbar-default .navbar-collapse {
+	border-color: #fff; 
+}
+
+.navbar-header,
+.header__logo,
+.header__adress,
+.header__link,
+.header__phone {
+	display: inline-block;
+}
+	
+.navbar-header{
+	width: 100%;
+	margin-right: 0;
+	margin-left: 0;
+	text-align: justify;
+}
+	
+.navbar-header:after {
+	content:"";
+	display:inline-block;
+	width:100%;
+	height:0;
+	overflow:hidden;
+}
+
+.header__logo {
+	text-decoration: none;
+	margin: 0 6% 0 -5px;
+	float: none;
+}
+
+.header__logo:hover{
+	text-decoration: none;
+}
+	.h_logo_lead{
+		font-weight: 500; /*medium*/
+		font-size: 44px;
+		text-transform: uppercase;
+		margin: 0;
+	}
+
+	.h_logo_slogan{
+		color: #000;
+		font-size: 14px;
+		margin: -4px 0 0;
+	}
+
+.header__adress {
+	line-height: 33px;
+	font-size: 24px;
+	margin-right: 4.5%;
+}
+	
+	.h_adress__sity{
+		margin: 0;
+	}
+	
+	.h_adress__street{
+		font-size: 18px;
+		line-height: 21px;
+		display: block;
+	}
+
+.header__link {
+	color: #3685de;
+	margin-right: 3.4%;
+	line-height: 26px;
+	margin-bottom: -4px;
+	font-size: 15px;
+}
+
+	.h_link__mail{
+		text-decoration: underline;
+	} 
+
+	.h_link__callBack{
+		display: block;
+	}
+
+.header__phone {
+	font-size: 37px;
+	color: #d4a964;
+	vertical-align: bottom;
+}
+	.flaticon-phone13 {
+		display: inline-block;
+	}
+
+	.flaticon-phone13:before {
+		font-size: 27px;
+		width: 0;
+		margin-left: 0;
+	}
+
+	.h_phone__number{
+		display: inline-block;
+		margin: 0;
+	}
+
+/*ссылки на страницы */
+.navbar-collapse {
+	width: 100%;
+	padding: 0;
+	margin-right: 0!important;
+	margin-left: 0!important;
+}
+
+	.navbar-nav > li,
+	.nav-tabs > li {
+		display: inline-block;
+		margin: 0 1.74%;
+	}
+	.navbar-nav > li:first-child,
+	.nav-tabs > li:first-child{
+		margin-left: 0;
+	}
+	.navbar-nav > li:last-child,
+	.nav-tabs > li:last-child {
+		margin-right: 0;
+	}
+		.navbar-default .navbar-nav > li > a{
+			padding: 15px;
+			color: #e3e3e3;
+			font-size: 18px;
+			padding: 6px 10px 9px;
+			margin: 0;
+		}
+		.navbar-default .selected a,
+		.navbar-default .navbar-nav > li a:hover,
+		.nav-tabs > li a:hover {
+			background: #d4a964;
+			text-decoration: none;
+			border-radius: 4px;
+			border-color: #d4a964;
+		}
+		.navbar-default .selected a {
+			text-decoration: none;
+		}
+			.navbar-default .navbar-nav > li > a span {
+				color: #000;
+			}
+			.navbar-default .navbar-nav > li > a:hover span,
+			.navbar-default .navbar-nav > .selected > a span {
+				color: #fff;
+			}
+/*нейтрализую не нужные стили с bootstrap.css */
+.nav-tabs {
+	border: none;
+}
+
+.navbar-nav {
+	float: none;
+	padding-top: 15px;
+}
+
+.navbar-nav a {
+	margin: 7.5px 0;
+	text-decoration: underline;
+}
+/*конец нейтрализации стилей*/
+
+/*стилизация буутстрап кнопки*/
+.navbar .navbar-header .navbar-toggle,
+.wrapper .navbar .navbar-header .navbar-toggle:hover {
+	background-color: #D4A964;
+	border: none;
+}
+
+	.navbar .navbar-header .navbar-toggle span,
+	.navbar .navbar-header .navbar-toggle:focus span,
+	.wrapper .navbar .navbar-header .navbar-toggle:hover span {
+		background-color: #fff;
+	}
+
+.wrapper .navbar .navbar-header .collapsed {
+	background-color: #fff;
+	border: 1px solid #DDD;
+}
+
+.wrapper .navbar .navbar-header .collapsed .icon-bar {
+	background-color: #888;
+}
+/*/стилизация буутстрап кнопки*/
+/*/ссылки на страницы */
+/*-------/шапка-------*/
+
+
+/*=======================================================
+СОДЕРЖАНИЕ=============================================*/
+
+
+/*-------------------------Инфографика (дом с баблами)-------------------------*/
+
+.infographics {
+	position: relative;
+	margin-left: -5%;
+	text-align: center;
+}
+	.infographics__imgHouse {
+		position: relative;
+		z-index: -1;
+		width: 47%;
+		margin:75px 5% 43px 0;
+	}
+
+canvas {
+    position:absolute;
+    top:0px;
+    left:0px;
+    z-index: -1;
+}
+
+
+.bubble__txt {
+	display: inline-block;
+	vertical-align: middle;
+	text-decoration: underline;
+	margin: 0 5px;
+	font-size: 17px;
+	color: #d7d7d7;
+}
+	.bubble__txt span {
+		color: #000;
+	}
+	
+.bubble__icon {
+	vertical-align: middle;
+}
+
+/*расписываем координаты баблов и точек*/
+.point{
+	left: 53%;
+	top: 52%;
+	position:absolute;
+	z-index: 2;
+	width: 5px;
+	height: 5px;
+	border-radius: 4px;
+	background: #d4a964;
+	box-shadow: 0 0 0 2px #fff;
+}
+
+.tempPoint{
+	left: 47.1%;
+	top: 70%;
+}
+.elecPoint{
+	left: 36.5%;
+	top: 75%;
+}
+.ecoPoint{
+	left: 60%;
+	top: 29%;
+}
+.linePoint{
+	left: 54.4%;
+	top: 62%;
+}
+.soundPoint{
+	left: 59.5%;
+	top: 65%;
+}
+
+.infographics__canvasAndBubbls--left .infographics__bubble{
+	text-align: right;
+}
+
+.infographics__bubble {
+	text-align: left;
+	left: 17%;
+	top: 4%;
+	position:absolute;
+	z-index: 2;
+	font-family:"Tahoma";
+	display: block;
+}
+
+.temp {
+	left: 16%;
+	top: 22.8%;
+}
+.elec{
+	left: 17%;
+	top: 53%;
+}
+.eco{
+	left: 68.3%;
+	top: 3%;
+}
+.line{
+	left: 69.8%;
+	top: 23%;
+}
+.sound {
+	left: 67%;
+	top: 44%;
+}
+
+/*инфографика*/
+
+
+/*листья*/
+.leaf {
+	position: absolute;
+	top: 66%;
+	right: 17%;
+	z-index: -2;
+	width: 14%;
+}
+
+.leafSmoll{
+
+	position: absolute;
+	top: 55%;
+	left: 15%;
+	z-index: -2;
+	width: 7.5%;
+}
+/*/инфографика*/
+
+
+/*-------------------------Утеплитель-------------------------*/
+.insulation{
+	margin: 2px 0 15px 1.55%;
+}
+	.insulation__img{
+			width: 29%;
+			vertical-align: middle;
+		}
+
+	.insulation__body{
+		display: inline-block;
+		width: 62%;
+		vertical-align: middle;
+		margin: 0 0 0 1.5%;
+		padding-bottom: 52px;
+	}
+		.insulation__header{
+			text-align: left;
+			font-size: 36px;
+			margin-left: 3px;
+			padding-bottom: 4px;
+		}	
+		.insulation__txt {
+			margin-top: 22px;
+			font-size: 17px;
+			line-height: 21px;
+		}
+/*/утеплитель*/
+
+/*-------------------------Расчет-------------------------*/
+.bg-brown {
+	background-image: url(../images/bg-brown.jpg);
+	padding: 40px 0 78px;
+	text-align: center;
+	position: relative;
+}
+	.bg-brown__imgTape {
+		margin-left: 3%;
+		vertical-align: bottom;
+		position: relative;
+		display: block;
+	}
+	.bg-brown__imgShadow {
+		z-index: 2;
+		display:block;
+		position:absolute;
+		left:0;
+		right:0;
+		bottom: 4%;
+		margin: auto;
+		width: 74%;
+	}
+
+.calculator {
+	background: #fff;
+	border-radius: 10px;
+	text-align: center;
+	padding: 23px 17px 17px;
+	position: relative;
+	z-index: 5;
+}
+	.calculator__header{
+		margin-bottom: 45px;
+	}
+	.calculator__info {
+		text-align: left; 
+		margin:0 5.5%;
+		margin-bottom: 33px;
+	}
+		.calculator__info__name,
+		.calculator__info__square,
+		.calculator__info__thickness,
+		.calculator__price__m2,
+		.calculator__price__m3,
+		.calculator__price__total,
+		.calculator__info__paragraph {
+			display: inline-block;
+			font-family: 'Tahoma';
+			font-size: 15px;
+		}
+
+		.calculator__info__paragraphp{
+			margin-right: 7px;
+		}
+
+		.calculator__info__name,
+		.calculator__info__square,
+		.calculator__info__thickness {
+			margin-right: 9.3%;
+		}
+
+		.calculator__info__name {
+			width: 33%;
+		}
+			.calculator__info__name__chose {
+				width: 55%;
+				min-width: 150px;
+				display: inline-block;
+				position: relative;
+			}
+				.calculator__info__name__chose select {
+					min-width: 150px;	
+					width: 100%;
+				}
+
+		.calculator__info__square {
+			width: 20%;
+			margin-right: 5.6%;
+		}
+		.calculator__info__thickness {
+			width: 29%;
+			margin-right: 0;
+		}
+			.calculator__info__thickness__chose{
+				width: 33%;
+				min-width: 75px;
+				display: inline-block;
+				position: relative;
+			}
+			.calculator__info__thickness .select-arrow{
+				right: -27px;
+			}
+			
+		.calculator__info select,
+		input[type="number"] {
+			background: #fafafa;
+			border: 1px solid #e8e8e8;
+			border-radius: 5px;
+			padding: 6px 11px 5px;
+			color: #8E8E8E;
+			font-size: 16px;
+			font-weight: 100;
+			font-family: 'Arial';
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+		}
+
+		.calculator__info select:focus,
+		.calculator__info select:hover,
+		input[type="number"]:focus,
+		input[type="number"]:hover {
+			outline: none;
+			border: 1px solid #D4A964;
+		}
+
+		input[type=number]::-webkit-inner-spin-button,
+		input[type=number]::-webkit-outer-spin-button {
+		    -webkit-appearance: none;
+		    margin: 0;
+		}
+
+	.select-arrow {
+		width: 35px;
+		height: 36px;
+		background-image: url(../images/select-arrow.png);
+		position: absolute;
+		top: 1px;
+		vertical-align: top;
+		right: -27px;
+	}
+
+	.select-arrow:hover {
+		cursor: pointer;
+	}
+
+	input[type="number"] {
+		padding:7px 0 5px;
+		min-width: 62px;
+		width: 38%;
+		text-align: center;
+	}
+	
+.calculator__price {
+	margin-bottom: 30px;
+}
+	.calculator__price__m2,
+	.calculator__price__m3,
+	.calculator__price__total{
+		width: 32.3%;
+		border-right: 1px solid #e3e3e3;
+	}	
+	.calculator__price__total {
+		border-right: none;
+	}
+		.calculator__price__m2 p,
+		.calculator__price__m3 p,
+		.calculator__price__total p {
+			display: inline-block;
+		}
+
+		.calculator__price__m2 span,
+		.calculator__price__m3 span,
+		.calculator__price__total span,
+		output {
+			font-size: 30px;
+			color: #d4a964;
+			font-weight: 300;
+			font-family: 'Roboto', sans-serif;
+			display: inline-block;
+			padding-top: 0; 
+		}
+
+input[type="submit"] {
+	background: #d4a964;
+	color: #fff;
+	text-align: center;
+	font-size: 22px;
+	font-weight: 500;
+	padding: 9px 30px;
+	border-radius: 3px;
+	border: none;
+	margin-bottom: 10px;
+}
+
+input[type="submit"]:hover {
+	background: #E0AE5D;
+	box-shadow: 0 4px 5px 0px #B7A07D;
+	outline: none;
+}
+
+input[type="submit"]:active {
+	box-shadow: inset 1px 5px 17px #B7A07D;
+	outline: none;
+}
+input[type="submit"]:focus {
+	outline: none;
+}
+/*/расчет*/
+
+
+/*-------------------------ПРЕИМУЩЕСТВА-------------------------*/
+.benefits {
+	font-size: 61px;
+	padding: 51px 0 17px;
+	text-align: center;
+}
+
+.benefits__title {
+	margin-bottom: 65px;
+}
+
+.benefits__block__parent {
+	display: inline-block;
+	vertical-align: top;
+	width: 32.3%;
+	position: relative;
+	min-width: 245px;
+	max-width: 310px;
+}
+	.benefits__block {
+		min-height: 294px;
+		border: 1px solid #F2F2F2;
+		border-radius: 8px;
+		text-align: center;
+		padding: 36px 4% 5px 0;
+		background: #FDFCFC;
+		margin-bottom: 56px;
+		position: relative;
+		z-index: 1;
+	}
+		.benefits__block__img {
+			width: 38.5%;
+			margin: 0 auto;
+		}
+
+		.benefits__block__header {
+			font-size: 22px;
+			font-weight: 300;
+			margin:17px 0 15px;
+			line-height: 36px;
+		}
+
+			.block__bottom__header{
+				margin-top: 14px;
+			}
+
+	.benefits__block__txt {
+		font-size: 15px;
+		color: #727272;
+		line-height: 19px;
+	} 
+
+	.benefits__block--air .benefits__block__img {
+		margin-top: 7px;
+	}
+
+	.benefits__block--air h5 {
+		margin-top: 11px;
+	}
+
+	.block-shadow {
+		display:block;
+		position:absolute;
+		left:-1px;
+		right:0;
+		bottom: 12.2%;
+		z-index: 0;
+		margin:auto;
+		width: 100%;
+	 }
+/*/преимущества*/
+
+/*-------/содержание-------*/
+
+
+/*-------------------------ПОДВАЛ-------------------------*/
+footer {
+	background: #f5f5f5;
+	border-top: 1px solid #e3e3e3;
+	padding: 30px 0;
+	position: relative;
+	z-index: 3;
+}
+	.footer__links {
+		float: left;
+		width: 65%;
+	}
+	.footer__links a:hover {
+		color: #D4A964;
+	}	
+		.footer__list {
+			display: inline-block;
+			margin-right: 4.5%;
+			text-decoration: underline; 
+		}
+		.footer__list:last-child {
+			margin-right: 0;
+		}
+			.footer__link {
+				color: #000;
+				font-size: 15px;
+			}
+
+	.footer__pull-right {
+		float: right;
+		text-align: right;
+		font-size: 18px;
+		margin-bottom: 15px;
+	}
+		.footer__pull-right__adress {
+			margin-bottom: 8px
+		}
+
+		.footer__pull-right__phone {
+			font-size: 24px;
+			margin-bottom: 7px;
+		}
+			.footer__pull-right__phone .flaticon-phone13{
+				color: #d4a964;
+				margin-right: 7px;
+			}
+		
+		.footer__pull-right__email {
+			color: #3685de;
+			text-decoration: underline;
+			font-size: 18px;
+		}
+	
+	.footer__copyright {
+		clear: both;
+		border-top: 1px solid #dadada;
+		color: #969696;
+		padding: 11px 0;
+		font-family: "Tahoma";
+		font-size: 15px;
+	}
+/*/подвал*/
+
+
+
+
