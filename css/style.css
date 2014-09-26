@@ -10,9 +10,11 @@
 	font-style: normal;
 }
 
-body{
-	overflow-x: hidden;
+
+html, body {
+	min-width: 320px;
 }
+
 .wrapper {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300; /*light*/
@@ -474,8 +476,8 @@ canvas {
 			font-size: 15px;
 		}
 
-		.calculator__info__paragraphp{
-			margin-right: 7px;
+		.calculator__info__paragraph{
+			margin-right: 6px;
 		}
 
 		.calculator__info__name,
@@ -521,7 +523,7 @@ canvas {
 			background: #fafafa;
 			border: 1px solid #e8e8e8;
 			border-radius: 5px;
-			padding: 6px 11px 5px;
+			padding: 5px 11px 5px;
 			color: #8E8E8E;
 			font-size: 16px;
 			font-weight: 100;
@@ -530,7 +532,19 @@ canvas {
 			-moz-appearance: none;
 			appearance: none;
 		}
-
+		/*для Mozilla скрываем дефолтную стрелку за коастомной*/
+		.calculator__info select{
+			box-sizing: initial;
+		}
+		/*для IE11 скрываем дефолтную стрелку за коастомной*/
+		select::-ms-expand {
+		    display: none;
+		}
+		/*для Mozilla и IE11 скрываем дефолтные стрелки*/
+		input[type=number] {
+		    -moz-appearance:textfield;
+		}
+		
 		.calculator__info select:focus,
 		.calculator__info select:hover,
 		input[type="number"]:focus,
@@ -550,7 +564,7 @@ canvas {
 		height: 36px;
 		background-image: url(../images/select-arrow.png);
 		position: absolute;
-		top: 1px;
+		top: 0;
 		vertical-align: top;
 		right: -27px;
 	}
@@ -626,7 +640,7 @@ input[type="submit"]:focus {
 
 /*-------------------------ПРЕИМУЩЕСТВА-------------------------*/
 .benefits {
-	font-size: 61px;
+	font-size: 59px;
 	padding: 51px 0 17px;
 	text-align: center;
 }

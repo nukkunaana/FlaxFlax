@@ -632,6 +632,10 @@
 	.leafSmoll {
 		top: 37%;
 	}
+
+	.benefits__block__parent {
+		min-width: 303px;
+	}
 }
 
 @media (max-width: 365px) {
